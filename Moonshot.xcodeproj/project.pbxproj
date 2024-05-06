@@ -17,6 +17,10 @@
 		DE9317E42BCBDF0600924953 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9317E32BCBDF0600924953 /* ContentView.swift */; };
 		DE9317E62BCBDF0600924953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9317E52BCBDF0600924953 /* Assets.xcassets */; };
 		DE9317E92BCBDF0600924953 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9317E82BCBDF0600924953 /* Preview Assets.xcassets */; };
+		DEE08F392BE9545D00FDA38B /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE08F382BE9545D00FDA38B /* GridLayout.swift */; };
+		DEE08F3B2BE95E6200FDA38B /* ListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE08F3A2BE95E6200FDA38B /* ListLayout.swift */; };
+		DEE08F3D2BE9702C00FDA38B /* AstroHorScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE08F3C2BE9702C00FDA38B /* AstroHorScroll.swift */; };
+		DEE08F3F2BE976A000FDA38B /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE08F3E2BE976A000FDA38B /* CustomDivider.swift */; };
 		DEF660DE2BD4F4B3003C9B7E /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF660DD2BD4F4B3003C9B7E /* Bundle-Decodable.swift */; };
 		DEF660E02BD52431003C9B7E /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF660DF2BD52431003C9B7E /* Mission.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +37,10 @@
 		DE9317E32BCBDF0600924953 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE9317E52BCBDF0600924953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE9317E82BCBDF0600924953 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEE08F382BE9545D00FDA38B /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		DEE08F3A2BE95E6200FDA38B /* ListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayout.swift; sourceTree = "<group>"; };
+		DEE08F3C2BE9702C00FDA38B /* AstroHorScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroHorScroll.swift; sourceTree = "<group>"; };
+		DEE08F3E2BE976A000FDA38B /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		DEF660DD2BD4F4B3003C9B7E /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		DEF660DF2BD52431003C9B7E /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +77,10 @@
 			children = (
 				DE9317E12BCBDF0600924953 /* MoonshotApp.swift */,
 				DE3362ED2BDE677300E82BEF /* MissionView.swift */,
+				DEE08F3E2BE976A000FDA38B /* CustomDivider.swift */,
+				DEE08F3C2BE9702C00FDA38B /* AstroHorScroll.swift */,
+				DEE08F382BE9545D00FDA38B /* GridLayout.swift */,
+				DEE08F3A2BE95E6200FDA38B /* ListLayout.swift */,
 				DE3B99802BE76A1F006D884F /* AstronautView.swift */,
 				DE9317E32BCBDF0600924953 /* ContentView.swift */,
 				DE1F846B2BD4733A0075B3CA /* Astronaut.swift */,
@@ -166,9 +178,13 @@
 				DE3362EE2BDE677300E82BEF /* MissionView.swift in Sources */,
 				DE1F846C2BD4733A0075B3CA /* Astronaut.swift in Sources */,
 				DE3B99812BE76A1F006D884F /* AstronautView.swift in Sources */,
+				DEE08F3B2BE95E6200FDA38B /* ListLayout.swift in Sources */,
 				DE1ECE612BD82AD500E077D3 /* Color-Theme.swift in Sources */,
 				DE9317E42BCBDF0600924953 /* ContentView.swift in Sources */,
 				DE9317E22BCBDF0600924953 /* MoonshotApp.swift in Sources */,
+				DEE08F392BE9545D00FDA38B /* GridLayout.swift in Sources */,
+				DEE08F3F2BE976A000FDA38B /* CustomDivider.swift in Sources */,
+				DEE08F3D2BE9702C00FDA38B /* AstroHorScroll.swift in Sources */,
 				DEF660E02BD52431003C9B7E /* Mission.swift in Sources */,
 				DEF660DE2BD4F4B3003C9B7E /* Bundle-Decodable.swift in Sources */,
 			);

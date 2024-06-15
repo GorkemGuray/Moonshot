@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MissionView: View {
     
-    struct CrewMember {
+    struct CrewMember: Hashable {
         let role: String
         let astronaut: Astronaut
     }
@@ -31,48 +31,49 @@ struct MissionView: View {
     }
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Image(mission.image)
-                    .resizable()
-                    .scaledToFit()
-                    .containerRelativeFrame(.horizontal) { width, axis in
-                        width * 0.6
+            ScrollView {
+                VStack {
+                    Image(mission.image)
+                        .resizable()
+                        .scaledToFit()
+                        .containerRelativeFrame(.horizontal) { width, axis in
+                            width * 0.6
+                            
+                        }
+                        .padding(.top)
+                    
+                    VStack(alignment: .leading) {
+                        CustomDivider()
                         
-                    }
-                    .padding(.top)
-                
-                VStack(alignment: .leading) {
-                    CustomDivider()
-                    
-                    Text(mission.formattedLaunchDate)
-                        .font(.headline)
-                        .foregroundStyle(.white.opacity(0.5))
-                    
-                    CustomDivider()
-
-                    
-                    Text("Mission Highlights")
-                        .font(.title.bold())
-                        .padding(.bottom, 5)
-                    
-                    Text(mission.description)
-                    
-                    CustomDivider()
-                    
-                    Text("Crew")
-                        .font(.title.bold())
-                        .padding(.bottom, 5)
-                }
-                .padding(.horizontal)
-                AstroHorScroll(crew: crew)
-            }
-            .padding(.bottom)
-        }
-        .navigationTitle(mission.displayName)
-        .navigationBarTitleDisplayMode(.inline)
-        .background(.darkBackground)
-    }
+                        Text(mission.formattedLaunchDate)
+                            .font(.headline)
+                            .foregroundStyle(.white.opacity(0.5))
+                        
+                        CustomDivider()
+                        
+                        
+                        Text("Mission Highlights")
+                            .font(.title.bold())
+                            .padding(.bottom, 5)
+                        
+                        Text(mission.description)
+                        
+                        CustomDivider()
+                        
+                        Text("Crew")
+                            .font(.title.bold())
+                            .padding(.bottom, 5)
+                    } //VStack-2
+                    .padding(.horizontal)
+                    AstroHorScroll(crew: crew)
+                } //VStack-1
+                .padding(.bottom)
+            } //ScrollView
+            .navigationTitle(mission.displayName)
+            .navigationBarTitleDisplayMode(.inline)
+            .background(.darkBackground)
+            
+    } //body
 }
 
 #Preview {

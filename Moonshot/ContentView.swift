@@ -54,9 +54,16 @@ struct ContentView: View {
                     Text("Grid")
                 }
                 .toggleStyle(.switch)
-        }//NavigationStack
-
         }
+            .navigationDestination(for: Mission.self) {mission in
+                MissionView(mission: mission, astronauts: astronauts)
+            }
+            
+            .navigationDestination(for: MissionView.CrewMember.self) { crew in
+                AstronautView(astronaut: crew.astronaut)
+            }
+
+        } //NavigationStack
 
     }//body
 }//ContentView
